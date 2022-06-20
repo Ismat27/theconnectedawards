@@ -1,0 +1,82 @@
+.form p {
+    line-height: normal;
+}
+.orange {
+    color: var(--orange-gold-color);
+}
+.center {
+    text-align: center;
+}
+.form-container {
+    background-color: var(--purple-color);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form {
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: 4px;
+    width: 95%;
+    max-width: 350px;
+}
+.form-field {
+    margin-bottom: 10px;
+}
+.fullname {
+    display: flex;
+    justify-content: space-between;
+}
+.fullname > div {
+    flex-basis: 49%;
+}
+label, .form-end {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+}
+.change-form {
+    font-size: 16px;
+}
+.form input, .form select, .form button {
+    width: 100%;
+    padding: .5rem 0;
+    background-color: var(--white-color);
+    border: 1px solid #D8CDE0;
+    border-radius: 4px;
+}
+form input {
+    text-indent: 10px;
+}
+.alt-break {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .bar {
+    display: block;
+    flex-basis: 45%;
+    border-bottom: 1px solid #D8CDE0;
+}
+.form-action, .change-form {
+    margin-bottom: 10px;
+}
+.form h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 120%;
+}
+form .submit-btn {
+    padding: 0.6rem 0;
+    border: none;
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}

@@ -2,6 +2,7 @@
   --white-color: #FFFFFF;
   --black-color: #0C0114;
   --orange-gold-color: #FA9706;
+  --light-purple: #EEE8F2;
   --purple-color: #3E0563;
   --bg-purple-color: #1F0231;
 }
@@ -125,7 +126,7 @@ img {
   .nav-menu .login-item {
     border-radius: 5px;
     padding: 15px 20px;
-    background-color: #EEE8F2;
+    background-color: var(--light-purple);
   }
   .nav-menu .login-link {
     color: var(--purple-color);
