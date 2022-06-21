@@ -7,7 +7,7 @@ const PastWinners = () => {
     }
     const winnerElements = []
     for (let i=0; i<8; i++) {
-        winnerElements.push(<PastWinner winner={winner}/>)
+        winnerElements.push(<PastWinner key={i} winner={winner}/>)
     }
     return (
         <>
