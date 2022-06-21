@@ -1,0 +1,47 @@
+.future-edition {
+    width: 250px;
+    padding: 2rem;
+    box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
+    border-radius: 8px;
+}
+.future-edition h3 {
+    margin: 10px 0 30px 0;
+}
+.future-edition a {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    display: block;
+    width: 100%;
+   padding-block: .8rem;
+}
+.future-editions, .past-winners {
+    justify-content: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.future  {
+    margin: 50px auto;
+}
+.center-header {
+    font-size: 36px;
+}
+.center-intro {
+    font-size: 20px;
+}
+/* winner */
+.past-winner {
+    width: 250px;
+}
+.past-winner h3 {
+    margin: 10px 0 5px 0;
+}
+.past-winner p {
+    color: var(--purple-color);
+}
+.winner-top h1 {
+    margin: 20px 0;
+}

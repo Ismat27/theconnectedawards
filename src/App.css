@@ -18,6 +18,9 @@ body {
   font-family:  'Roboto', Arial, Helvetica, sans-serif;
   margin: 0 auto;
 }
+.title-case {
+  text-transform: capitalize;
+}
 .grey {
   color: var(--grey-color);
 }

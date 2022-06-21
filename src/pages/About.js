@@ -3,10 +3,10 @@ const About = () => {
     return (
         <>
             <div className="center about-top">
-                <h1>
+                <h1 className='center-header'>
                     The Connected Awards
                 </h1>
-                <p className='grey'>Learn about us</p>
+                <p className='grey center-intro'>Learn about us</p>
             <img alt="heroes" src={require('./images/heroes2.png')}/>
             </div>
             <section className="about-section">
