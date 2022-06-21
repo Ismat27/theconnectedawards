@@ -1,4 +1,5 @@
 import './HomePage.css'
+import { Link } from 'react-router-dom'
 const HomePage = () => {
     return (
         <>
@@ -11,7 +12,10 @@ const HomePage = () => {
                     </div>
                     <button className="btn action-btn search-btn">Search</button>
                 </div>
-                <p><span>View all categories</span> <img alt='arrow' className="btn" src={require('./images/arrow-right.png')}/></p>
+                <p>
+                    <span>View all categories</span> 
+                    <Link to={'/categories'}><img alt='arrow' className="btn" src={require('./images/arrow-right.png')}/></Link>
+                </p>
             </section>
 
             <section className="target-section">
