@@ -1,0 +1,25 @@
+.about-top {
+    margin: 50px auto;
+}
+.about-top h1, .about > h1 {
+    margin-bottom: 1rem;
+}
+.about-top p {
+    margin-bottom: 30px;
+}
+
+.about-section {
+    padding: 10px 30px;
+}
+.about  {
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 800px) {
+    .about-section {
+        display: flex;
+        gap: 100px;
+    }
+    .about  {
+        margin-bottom: 0;
+    }
+}

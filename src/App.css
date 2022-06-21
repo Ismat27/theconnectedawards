@@ -5,6 +5,7 @@
   --light-purple: #EEE8F2;
   --purple-color: #3E0563;
   --bg-purple-color: #1F0231;
+  --grey-color: #808080;
 }
 * {
   box-sizing: border-box;
@@ -16,6 +17,9 @@ body {
   max-width: 1440px;
   font-family:  'Roboto', Arial, Helvetica, sans-serif;
   margin: 0 auto;
+}
+.grey {
+  color: var(--grey-color);
 }
 .btn {
   cursor: pointer;

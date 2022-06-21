@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import VotingCategories from './pages/VotingCategories';
+import About from './pages/About';
+
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +14,7 @@ function App() {
         <Route path='/' element={<Base/>}>
           <Route index element={<HomePage/>}/>
           <Route path='categories' element={<VotingCategories/>}/>
+          <Route path='about' element={<About/>}/>
         </Route>
         <Route path='register' element={<Register/>}/>
         <Route path='login' element={<Login/>}/>
