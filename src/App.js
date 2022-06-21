@@ -8,6 +8,8 @@ import VotingCategories from './pages/VotingCategories';
 import About from './pages/About';
 import PastWinners from './pages/PastWinners';
 import FutureEditions from './pages/FutureEditions';
+import Donate from './pages/Donate';
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +20,7 @@ function App() {
           <Route path='about' element={<About/>}/>
           <Route path='past' element={<PastWinners/>}/>
           <Route path='future' element={<FutureEditions/>}/>
+          <Route path='donate' element={<Donate/>}/>
         </Route>
         <Route path='register' element={<Register/>}/>
         <Route path='login' element={<Login/>}/>
