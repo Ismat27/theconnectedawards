@@ -1,0 +1,78 @@
+.style-list {
+    list-style: disc;
+}
+.book-cover {
+    max-height: 635px;
+}
+.donate-top {
+    padding: 0 50px;
+    margin: 20px auto;
+}
+.donate-top p {
+    line-height: normal;
+}
+.donate-top h1 {
+    margin-bottom: 10px;
+}
+.donate-flex {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.donate-flex p {
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+.donate-part {
+    max-width: 600px;
+}
+.donate-form > div {
+    display: flex;
+    margin-bottom: 20px;
+}
+.donate-form label {
+    font-size: 16px;
+}
+.donate-form {
+    margin-top: 20px;
+}
+.donate-form  input {
+    padding: 1rem 0;
+    flex-basis: 85%;
+    padding-right: 10px;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+.donate-form button {
+    padding: 1.5rem 0;
+    margin-bottom: 15px;
+}
+.donate-objs > li {
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #000000;
+}
+.currency {
+    border-radius: 4px 0 0 4px;
+    flex-basis: 15%;
+    background-color: var(--purple-color);
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+@media screen and (min-width: 800px) {
+    .donate-flex {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        justify-content: center;
+    }
+    .donate-form {
+        margin-top: 0px;
+    }
+}
+ 

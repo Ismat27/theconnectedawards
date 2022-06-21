@@ -39,7 +39,7 @@ label, .form-end {
 .change-form {
     font-size: 16px;
 }
-.form input, .form select, .form button {
+form input, .form select, .form button {
     width: 100%;
     padding: .5rem 0;
     background-color: var(--white-color);
@@ -48,6 +48,9 @@ label, .form-end {
 }
 form input {
     text-indent: 10px;
+}
+form input:focus {
+    outline: none;
 }
 .alt-break {
     margin: 10px auto;
@@ -68,8 +71,10 @@ form .bar {
     margin-bottom: 10px;
     line-height: 120%;
 }
-form .submit-btn {
+ form .submit-btn {
+    width: 100%;
     padding: 0.6rem 0;
+    border-radius: 4px;
     border: none;
     background-color: var(--purple-color);
     color: var(--white-color);
