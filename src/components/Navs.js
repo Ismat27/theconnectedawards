@@ -6,6 +6,9 @@ const Navs = () => {
     function controlNav() {
         setShowNav(prevState => !prevState)
     }
+    function closeNav() {
+        setShowNav(false)
+    }
     return (
         <header>
             <div className="header-div">
@@ -15,19 +18,19 @@ const Navs = () => {
             <nav className={`nav-menu ${showNav? 'show-nav': ''}`}>
                 <ul className="nav-items">
                     <li className="nav-item">
-                        <NavLink to={'categories'}>Categories</NavLink>
+                        <NavLink onClick={closeNav} to={'categories'}>Categories</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={'past'}>Past editions</NavLink>
+                        <NavLink onClick={closeNav} to={'past'}>Past editions</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={'future'}>Future editions</NavLink>
+                        <NavLink onClick={closeNav} to={'future'}>Future editions</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={'about'}>About us</NavLink>
+                        <NavLink onClick={closeNav} to={'about'}>About us</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to={'donate'}>Make a donation</NavLink>
+                        <NavLink onClick={closeNav} to={'donate'}>Make a donation</NavLink>
                     </li>
                 </ul>
                 <ul className="auth-items">
