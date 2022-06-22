@@ -12,7 +12,7 @@ const Navs = () => {
     return (
         <header>
             <div className="header-div">
-                <Link to={'/'}><img alt="logo" src={require('./images/nav-logo.png')}/></Link>
+                <Link onClick={closeNav} to={'/'}><img alt="logo" src={require('./images/nav-logo.png')}/></Link>
                 <img alt="hamburger-menu" src={require('./images/menu.png')} className='hamburger btn' onClick={controlNav}/>
             </div>
             <nav className={`nav-menu ${showNav? 'show-nav': ''}`}>

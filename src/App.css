@@ -71,7 +71,7 @@ header {
   font-weight: 600;
 }
 footer {
-  padding: 25px 10px 50px 10px;
+  padding: 25px 10px 50px 15px;
   background-color: var(--bg-purple-color);
 }
 footer * {
@@ -140,12 +140,12 @@ img {
     color: var(--purple-color);
   }
   footer {
-    padding: 50px 50px 100px 150px;
+    padding: 50px 50px 100px 100px;
   }
   .footer-starter {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 10px 100px;
   }
   .footer-end > div {
     display: flex;
