@@ -70,6 +70,9 @@ header {
   color: #0C0114;
   font-weight: 600;
 }
+.nav-item > a:hover {
+  color: var(--grey-color);
+}
 footer {
   padding: 25px 10px 50px 15px;
   background-color: var(--bg-purple-color);
