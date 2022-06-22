@@ -1,0 +1,39 @@
+.user-profile {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.user-profile li {
+    border: none;
+}
+div.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.drop-down-content {
+    background-color: var(--white-color);
+    padding: 1rem;
+    box-shadow: 0px 2px 15px rgba(230, 230, 230, 0.5);
+    border-radius: 8px;
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    display: none;
+}
+.user-profile  .drop-down-container {
+    position: relative;
+}
+.drop-down-container:hover .drop-down-content {
+    display: block;
+}
+
+@media all and (min-width: 800px) {
+    .user-profile {
+        flex-direction: row;
+    }
+    
+}

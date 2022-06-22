@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-
+import Profile from "./Profile";
 const Navs = () => {
     const [showNav, setShowNav] = useState(false)
     function controlNav() {
@@ -41,6 +41,7 @@ const Navs = () => {
                         <Link className="auth-link reg-link" to={'register'}>Create Account</Link>
                     </li>
                 </ul>
+                {/* <Profile name='ismail' points={70}/> */}
             </nav>
         </header>
     )
