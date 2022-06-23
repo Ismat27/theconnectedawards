@@ -1,6 +1,26 @@
-import { Link } from "react-router-dom"
+import { useContext, useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import UserContext from "../UserContext"
 import './Form.css'
+
 const Login = () => {
+    const [user, setUser] = useContext(UserContext)
+    const navigate = useNavigate()
+    const [userInput, setUserInput] = useState({email: '', password:''})
+
+    function formSubmit(event) {
+        event.preventDefault()
+        // perform some validation with the user inputs
+        setUser({name: 'Ismail', points: 0}) // update user upon validation
+        navigate('/')
+    }
+
+    function collectUserInput(event) {
+        const {name, value} = event.target
+        setUserInput({
+            [name]: value
+        })
+    }
     return (
         <main className="form-container">
             <div className="form">
@@ -10,7 +30,7 @@ const Login = () => {
                     <p className="change-form">Don't have an account? <Link className="orange" to={'/register'}>Sign Up</Link></p>
                     <button className="btn google-btn">Continue with Google</button>
                 </div>
-                <form>
+                <form onSubmit={formSubmit}>
                     <div className="alt-break">
                         <span className="bar"></span>
                         <span className="or">or</span>
@@ -18,11 +38,11 @@ const Login = () => {
                     </div>
                     <div className="email form-field">
                         <label htmlFor="email">Email Address</label>
-                        <input type={'email'} name='email' id="email" required/>
+                        <input onChange={collectUserInput} type={'email'} name='email' id="email" required/>
                     </div>
                     <div className="password form-field">
-                        <label htmlFor="password">Set Password</label>
-                        <input type={'password'} name='password' id="password" required/>
+                        <label htmlFor="password">Password</label>
+                        <input onChange={collectUserInput} type={'password'} name='password' id="password" required/>
                     </div>
                     <button type="submit" className="btn submit-btn">Log in</button>
                     <p className="center form-end forgot-password">

@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import UserContext from "../UserContext";
 import Profile from "./Profile";
 const Navs = () => {
     const [showNav, setShowNav] = useState(false)
@@ -9,6 +10,7 @@ const Navs = () => {
     function closeNav() {
         setShowNav(false)
     }
+    const user = [...useContext(UserContext)][0]
     return (
         <header>
             <div className="header-div">
@@ -33,15 +35,19 @@ const Navs = () => {
                         <NavLink onClick={closeNav} to={'donate'}>Make a donation</NavLink>
                     </li>
                 </ul>
-                <ul className="auth-items">
-                    <li className="auth-item login-item">
-                        <Link className="auth-link login-link" to={'login'}>Log In</Link>
-                    </li>
-                    <li className="auth-item reg-item">
-                        <Link className="auth-link reg-link" to={'register'}>Create Account</Link>
-                    </li>
-                </ul>
-                {/* <Profile name='ismail' points={70}/> */}
+                {
+                    user?
+                    <Profile/>:
+                    <ul className="auth-items">
+                        <li className="auth-item login-item">
+                            <Link className="auth-link login-link" to={'login'}>Log In</Link>
+                        </li>
+                        <li className="auth-item reg-item">
+                            <Link className="auth-link reg-link" to={'register'}>Create Account</Link>
+                        </li>
+                    </ul>
+                    
+                }
             </nav>
         </header>
     )
