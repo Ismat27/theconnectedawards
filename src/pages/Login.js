@@ -9,16 +9,20 @@ const Login = () => {
     const [userInput, setUserInput] = useState({email: '', password:''})
 
     function formSubmit(event) {
-        event.preventDefault()
         // perform some validation with the user inputs
-        setUser({name: 'Ismail', points: 0}) // update user upon validation
+        // update user details upon validation
+        setUser({name: 'Williams Chinedu', points: 70})
         navigate('/')
+        event.preventDefault()
     }
 
     function collectUserInput(event) {
         const {name, value} = event.target
-        setUserInput({
-            [name]: value
+        setUserInput(prevState => {
+            return {
+                ...prevState,
+                [name]: value
+            }
         })
     }
     return (
@@ -38,11 +42,11 @@ const Login = () => {
                     </div>
                     <div className="email form-field">
                         <label htmlFor="email">Email Address</label>
-                        <input onChange={collectUserInput} type={'email'} name='email' id="email" required/>
+                        <input onChange={collectUserInput} type={'email'} name='email' id="email" value={userInput.email} required/>
                     </div>
                     <div className="password form-field">
                         <label htmlFor="password">Password</label>
-                        <input onChange={collectUserInput} type={'password'} name='password' id="password" required/>
+                        <input onChange={collectUserInput} type={'password'} name='password' id="password" value={userInput.password} required/>
                     </div>
                     <button type="submit" className="btn submit-btn">Log in</button>
                     <p className="center form-end forgot-password">

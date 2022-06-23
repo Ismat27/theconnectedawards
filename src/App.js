@@ -1,6 +1,9 @@
 import './App.css';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
+
+import UserContext from './UserContext';
 import Base from './components/Base';
 import HomePage from './pages/HomePage';
 import Register from './pages/Register';
@@ -10,7 +13,7 @@ import About from './pages/About';
 import PastWinners from './pages/PastWinners';
 import FutureEditions from './pages/FutureEditions';
 import Donate from './pages/Donate';
-import UserContext from './UserContext';
+import VotePage from './pages/VotePage';
 
 function App() {
   const [user, setUser] = useState('')
@@ -25,6 +28,7 @@ function App() {
             <Route path='past' element={<PastWinners/>}/>
             <Route path='future' element={<FutureEditions/>}/>
             <Route path='donate' element={<Donate/>}/>
+            <Route path='vote' element={<VotePage/>}/>
           </Route>
           <Route path='register' element={<Register/>}/>
           <Route path='login' element={<Login/>}/>

@@ -37,7 +37,7 @@ const Navs = () => {
                 </ul>
                 {
                     user?
-                    <Profile/>:
+                    <Profile setShowNav={setShowNav}/>:
                     <ul className="auth-items">
                         <li className="auth-item login-item">
                             <Link className="auth-link login-link" to={'login'}>Log In</Link>

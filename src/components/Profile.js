@@ -2,10 +2,11 @@ import './Profile.css'
 import { Link } from 'react-router-dom'
 import UserContext from '../UserContext'
 import { useContext } from 'react'
-const Profile = () => {
+const Profile = ({setShowNav}) => {
     const [user, setUser] = [...useContext(UserContext)]
     function logout() {
         setUser('')
+        setShowNav(false)
     }
     return (
         <ul className="user-profile">
