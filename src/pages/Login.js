@@ -4,7 +4,7 @@ import UserContext from "../UserContext"
 import './Form.css'
 
 const Login = () => {
-    const [user, setUser] = useContext(UserContext)
+    const [, setUser] = useContext(UserContext)
     const navigate = useNavigate()
     const [userInput, setUserInput] = useState({email: '', password:''})
 

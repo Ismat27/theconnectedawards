@@ -4,7 +4,7 @@ const VotingCategory = ({category}) => {
         <Link to={'/vote'} className="voting-category">
             <img alt='cubes' src={require('./images/cubes.png')}/>
             <p>{category}</p>
-                <img src={require('./images/arrow-right.png')}/>
+                <img alt='arrow' src={require('./images/arrow-right.png')}/>
         </Link>
     )
 }

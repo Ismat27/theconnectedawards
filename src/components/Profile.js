@@ -18,9 +18,9 @@ const Profile = ({setShowNav}) => {
             </li>
             <li className="drop-down-container username">
                 <div className='profile-info'>
-                    <img alt="profile-image" className="profile-image" src={require('./images/profile-image.png')}/>
+                    <img alt="profile" className="profile-image" src={require('./images/profile-image.png')}/>
                     <span className='title-case'>{user.name}</span>
-                    <img src={require('./images/arrow-down.png')} className='drop-down-btn btn'/>
+                    <img alt='arrow' src={require('./images/arrow-down.png')} className='drop-down-btn btn'/>
                 </div>
                 <ul className='drop-down-content'>
                     <li><Link onClick={logout} to={'/'}>Log out</Link></li>
